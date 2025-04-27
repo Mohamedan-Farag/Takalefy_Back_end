@@ -27,10 +27,11 @@
   <source src="_repo/video_vLhvIPNN.mp4" type="video/mp4">
 </video>
 
-[![Screenshot 2025-04-27 024112](_repo/Screenshot%202025-04-27%20024112.png)](https://yourlink.com)
-[![Screenshot 2025-04-27 024204](_repo/Screenshot%202025-04-27%20024204.png)](https://yourlink.com)
-[![Screenshot 2025-04-27 024227](_repo/Screenshot%202025-04-27%20024227.png)](https://yourlink.com)
-[![Screenshot 2025-04-27 030417](_repo/Screenshot%202025-04-27%20030417.png)](https://yourlink.com)
+[![Screenshot 2025-04-27 030417](_repo/Screenshot%202025-04-27%20030417.png)](https://medium.com/geekculture/nest-js-architectural-pattern-controllers-providers-and-modules-406d9b192a3a)
+[![Screenshot 2025-04-27 024227](_repo/Screenshot%202025-04-27%20024227.png)](https://docs.nestjs.com/modules)
+[![Screenshot 2025-04-27 024112](_repo/Screenshot%202025-04-27%20024112.png)](https://docs.nestjs.com/controllers)
+[![Screenshot 2025-04-27 024204](_repo/Screenshot%202025-04-27%20024204.png)](https://docs.nestjs.com/providers)
+
 
 ## Project setup
 
