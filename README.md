@@ -27,7 +27,7 @@
   <source src="_repo/video_vLhvIPNN.mp4" type="video/mp4">
 </video>
 
-
+[شوف الفيديو](video_vLhvIPNN.mp4)
 
 ## Project setup
 
