@@ -27,10 +27,10 @@
   <source src="_repo/video_vLhvIPNN.mp4" type="video/mp4">
 </video>
 
-![Screenshot 2025-04-27 024112](assets/screenshots/Screenshot%202025-04-27%20024112.png)
-![Screenshot 2025-04-27 024204](assets/screenshots/Screenshot%202025-04-27%20024204.png)
-![Screenshot 2025-04-27 024227](assets/screenshots/Screenshot%202025-04-27%20024227.png)
-![Screenshot 2025-04-27 030417](assets/screenshots/Screenshot%202025-04-27%20030417.png)
+![Screenshot 2025-04-27 024112](_repo/Screenshot%202025-04-27%20024112.png)
+![Screenshot 2025-04-27 024204](_repo/Screenshot%202025-04-27%20024204.png)
+![Screenshot 2025-04-27 024227](_repo/Screenshot%202025-04-27%20024227.png)
+![Screenshot 2025-04-27 030417](_repo/Screenshot%202025-04-27%20030417.png)
 
 ## Project setup
 
