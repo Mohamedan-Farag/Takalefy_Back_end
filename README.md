@@ -24,7 +24,7 @@
 ## Description
 
 <video width="640" height="360" controls>
-  <source src="_repo/video.mp4" type="video_vLhvIPNN/mp4">
+  <source src="video_vLhvIPNN.mp4" type="video/mp4">
   متصفحك لا يدعم عرض الفيديو.
 </video>
 
