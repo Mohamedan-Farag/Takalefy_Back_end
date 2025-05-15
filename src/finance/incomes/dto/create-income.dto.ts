@@ -1,4 +1,3 @@
 export class CreateIncomeDto {
-    income: number;
-  }
-  
+  income: number;
+}

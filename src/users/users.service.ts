@@ -1,30 +1,51 @@
-import { Injectable } from '@nestjs/common';
-import { CreateUserDto } from '../dtos/create-user.dto';
-import { User } from './user.interface';
-import * as bcrypt from 'bcrypt';
+import { Injectable, ConflictException } from "@nestjs/common";
+import { CreateUserDto } from "../dtos/create-user.dto";
+import { PrismaService } from "../../prisma/prisma.service";
+import * as bcrypt from "bcrypt";
 
 @Injectable()
 export class UsersService {
-  private users: User[] = [];
-
-  private id = 1;
+  constructor(private prisma: PrismaService) {}
 
   async create(dto: CreateUserDto) {
+    console.log("Received DTO:", dto);
+
+    const existingUser = await this.prisma.user.findUnique({
+      where: { username: dto.username },
+    });
+
+    if (existingUser) {
+      throw new ConflictException("Username is already taken");
+    }
+
+    if (!dto.password) {
+      throw new Error("Password is required");
+    }
+
     const hashedPassword = await bcrypt.hash(dto.password, 10);
-    const newUser = {
-      id: this.id++,
-      ...dto,
-      password: hashedPassword,
-    };
-    this.users.push(newUser);
+
+    const newUser = await this.prisma.user.create({
+      data: {
+        username: dto.username,
+        email: dto.email,
+        password_hash: hashedPassword,
+        full_name: dto.name,
+        preferred_currency: dto.currency,
+      },
+    });
+
     return newUser;
   }
 
   async findByEmail(email: string) {
-    return this.users.find(user => user.email === email);
+    return this.prisma.user.findUnique({
+      where: { email },
+    });
   }
 
   async findById(id: number) {
-    return this.users.find(user => user.id === id);
+    return this.prisma.user.findUnique({
+      where: { user_id: id },
+    });
   }
 }

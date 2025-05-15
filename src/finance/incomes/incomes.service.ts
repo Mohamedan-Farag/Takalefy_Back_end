@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable } from "@nestjs/common";
 
 @Injectable()
 export class IncomesService {
@@ -6,7 +6,7 @@ export class IncomesService {
 
   create(income: number) {
     this.incomes.push(income);
-    return { message: 'Income added successfully', incomes: this.incomes };
+    return { message: "Income added successfully", incomes: this.incomes };
   }
 
   findAll() {
